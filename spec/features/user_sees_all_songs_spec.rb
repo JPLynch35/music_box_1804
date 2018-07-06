@@ -3,8 +3,9 @@ require 'rails_helper'
 describe 'a visitor' do
   describe 'user index' do
     it 'user cam see all songs' do
-      song_1 = Song.create(title:"Dont't Stop Believin", length: 303, play_count: 123456)
-      song_2 = Song.create(title:"Never Gonna Give You Up", length: 253, play_count: 92238423)
+      artist = Artist.create(name: 'Rick Rock')
+      song_1 = artist.songs.create(title:"Dont't Stop Believin", length: 303, play_count: 123456)
+      song_2 = artist.songs.create(title:"Never Gonna Give You Up", length: 253, play_count: 92238423)
 
       visit '/songs'
       
