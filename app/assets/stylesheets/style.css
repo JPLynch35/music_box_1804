@@ -1,0 +1,45 @@
+#header {
+  text-align: center;
+  font-size: 15;
+  font-weight: bold;
+  font-family: Shrikhand;
+  background-color:  rgb(234, 254, 243);
+}
+
+body {
+  background-color: rgb(234, 254, 243);
+}
+
+.songs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 80px;
+  margin: 30px;
+  justify-items: center;
+}
+
+.song-container {
+  width: 245px;
+  height: 255px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(232, 242, 236);
+  border-radius: 7%;
+  font-family: Raleway;
+  line-height: 150%;
+}
+
+.song-container img {
+  width: 65%;
+  height: 45%;
+  border-radius: 100%;
+  padding-bottom: 7px;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+}

@@ -1,6 +1,22 @@
-<h1>All Songs</h1>
-
-<% @songs.each do |song| %>
-  <h2><%= song.title %></h2>
-  <p>Plays: <%= song.play_count %></p>
-  <% end %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Shrikhand" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id='header'> Songs </h1>
+    <div class="songs-container">
+      <% @songs.each do |song| %>
+      <div class='song-container'>
+        <ul>
+          <img src="/assets/vinyl.jpg" alt="Vinyl Photo by Adrian Korte"/>
+          <li><%= song.title %></li>
+          <li><%= song.length %> seconds</li>
+          <li>Play Count: <%= song.play_count %></li>
+        </ul>
+      </div>
+      <% end %>
+    </div>
+  </body>
+</html>
