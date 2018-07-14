@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%# <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Shrikhand" rel="stylesheet"> %>
+  </head>
+  <body>
+    <h1 id='header'> Artists </h1>
+    <h3><%= link_to 'Add a New Artist', new_artist_path %></h3>
+    <div>
+      <% @artists.each do |artist| %>
+      <div>
+        <ul>
+          <li><%= artist.name %></li>
+        </ul>
+      </div>
+      <% end %>
+    </div>
+  </body>
+</html>

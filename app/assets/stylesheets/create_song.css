@@ -1,0 +1,35 @@
+body {
+  background: url(/assets/cassette.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+.form-label {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.form-input {
+  width: 215px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+#title-and-form {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+
+#form-submit {
+  width: 200px;
+  height: 32px;
+  border-radius: 10px;
+  background-color: navy;
+  color: white;
+  font-size: 16px;
+}
