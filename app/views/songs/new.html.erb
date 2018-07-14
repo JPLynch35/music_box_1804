@@ -1,0 +1,15 @@
+  <div id='title-and-form'>
+    <h1>Create A New Song</h1>
+    <%= form_for [@artist, @song] do |f| %>
+      <p><%= f.label :title, class: 'form-label' %></p>
+      <%= f.text_field :title, class: 'form-input' %>
+
+      <p><%= f.label :length, class: 'form-label' %></p>
+      <%= f.text_field :length, class: 'form-input' %>
+
+      <p><%= f.label :play_count, class: 'form-label' %></p>
+      <%= f.text_field :play_count, class: 'form-input' %>
+
+      <p><%= f.submit id: 'form-submit' %></p>
+    <% end %>
+  </div>
